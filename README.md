@@ -12,9 +12,9 @@ This is an in-progress project aimed at implementing a **steganography** tool to
 ## Technologies 💻
 
 - **Frontend**:
-  - Next.js 🚀
-  - Tailwind CSS (for styling) 🌸
+  - Next.js 
+  - Tailwind CSS 
   
 - **Backend**:
-  - Flask ⚙️
-  - Python libraries for image processing and encoding 🐍
+  - Flask 
+  - Python libraries for image processing and encoding 
