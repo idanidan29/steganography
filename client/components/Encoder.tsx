@@ -5,9 +5,10 @@ import { FileUpload } from './ui/file-upload'
 
 export const Encoder = () => {
   return (
-    <div>
+    <div className=''>
         <FileUpload />
     </div>
+
   )
 }
 
