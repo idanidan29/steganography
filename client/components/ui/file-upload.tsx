@@ -36,8 +36,10 @@ export const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void })
     },
   });
 
+  const dropzoneProps = getRootProps(); // Assign getRootProps() to a variable
+
   return (
-    <div className="w-full" {...getRootProps()}>
+    <div className="w-full" {...dropzoneProps}> {/* Use the variable here */}
       <motion.div
         onClick={handleClick}
         whileHover="animate"
