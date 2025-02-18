@@ -35,9 +35,13 @@ export const FileUpload = ({
   const [files, setFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // עדכון פונקציה כך שתאפס את הרשימה ותוסיף רק את הקובץ הראשון שמתקבל
   const handleFileChange = (newFiles: File[]) => {
-    setFiles((prevFiles) => [...prevFiles, ...newFiles]);
-    onChange && onChange(newFiles);
+    if (newFiles.length > 0) {
+      const selectedFile = newFiles[0];
+      setFiles([selectedFile]);
+      onChange && onChange([selectedFile]);
+    }
   };
 
   const handleClick = () => {
@@ -45,15 +49,15 @@ export const FileUpload = ({
   };
 
   const { getRootProps, isDragActive } = useDropzone({
-      multiple: false,
-      noClick: true,
-      onDrop: handleFileChange,
-      onDropRejected: (error) => {
-          console.log(error);
-      },
-      onDragEnter: undefined,
-      onDragOver: undefined,
-      onDragLeave: undefined
+    multiple: false,
+    noClick: true,
+    onDrop: handleFileChange,
+    onDropRejected: (error) => {
+      console.log(error);
+    },
+    onDragEnter: undefined,
+    onDragOver: undefined,
+    onDragLeave: undefined,
   });
 
   return (
@@ -67,7 +71,9 @@ export const FileUpload = ({
           ref={fileInputRef}
           id="file-upload-handle"
           type="file"
-          onChange={(e) => handleFileChange(Array.from(e.target.files || []))}
+          onChange={(e) =>
+            handleFileChange(Array.from(e.target.files || []))
+          }
           className="hidden"
         />
         <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,white,transparent)]">
