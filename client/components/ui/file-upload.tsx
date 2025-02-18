@@ -40,7 +40,9 @@ export const FileUpload = ({
     if (newFiles.length > 0) {
       const selectedFile = newFiles[0];
       setFiles([selectedFile]);
-      onChange && onChange([selectedFile]);
+      if (onChange) {
+        onChange([selectedFile]);
+      }
     }
   };
 
