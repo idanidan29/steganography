@@ -6,7 +6,7 @@ import { EncryptButton } from './EncryptButton '
 import { SliderToggle } from './ui/SliderToggle'
 
 export const Encoder = () => {
-  const [selected, setSelected] = useState("Encrypt");
+  const [selected, setSelected] = useState<"Encrypt" | "Decrypt">("Encrypt");
   
   return (
     <div className="flex flex-col items-center justify-center">
