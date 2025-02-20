@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import { FileUpload } from "./ui/file-upload";
 import { EncryptButton } from "./EncryptButton ";
 
