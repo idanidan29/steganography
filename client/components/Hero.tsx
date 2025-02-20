@@ -12,7 +12,7 @@ export const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
                     >
-                        Save Your Data.
+                        Save Your Data. 
                         <strong className="font-extrabold text-indigo-500 sm:block">
                             Secure Your Password.
                         </strong>
