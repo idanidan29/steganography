@@ -3,11 +3,10 @@
 import React, { useState } from "react";
 import { FileUpload } from "./ui/file-upload";
 import { EncryptButton } from "./EncryptButton ";
-import { SliderToggle } from "./ui/SliderToggle";
+
 import { RiLockPasswordFill } from "react-icons/ri";
 
 export const Encoder = () => {
-  const [selected, setSelected] = useState<"Encrypt" | "Decrypt">("Encrypt");
 
   return (
     <div className="flex flex-col items-center justify-center mx-auto bg-white shadow-lg rounded-lg p-6 w-[600px]">
