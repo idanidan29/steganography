@@ -3,7 +3,7 @@ import React from "react";
 
 export const Hero = () => {
     return (
-        <section className="bg-white text-white">
+        <section className="bg-white text-indigo-900">
             <div className="mx-auto max-w-screen-xl px-6 py-32 lg:flex lg:h-screen lg:items-center">
                 <div className="mx-auto max-w-2xl text-center">
                     <motion.h1
@@ -12,7 +12,7 @@ export const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
                     >
-                        Understand User Flow.
+                        Save Your Data.
                         <strong className="font-extrabold text-indigo-500 sm:block">
                             Secure Your Password.
                         </strong>
