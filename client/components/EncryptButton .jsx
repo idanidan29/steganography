@@ -56,7 +56,7 @@ export const EncryptButton = () => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="m-5 group relative overflow-hidden rounded-lg border-[1px] border-neutral-500 bg-indigo-600 px-4 py-2 font-mono font-medium uppercase text-white transition-colors hover:text-indigo-300"
+      className="mt-5 group relative overflow-hidden rounded-lg border-[1px] border-neutral-500 bg-indigo-600 px-4 py-2 font-mono font-medium uppercase text-white transition-colors hover:text-indigo-300"
     >
       <div className="relative z-10 flex items-center gap-2">
         <FiLock />

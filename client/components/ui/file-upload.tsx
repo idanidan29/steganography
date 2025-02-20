@@ -58,10 +58,10 @@ export const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void })
         </div>
         <div className="flex flex-col items-center justify-center">
           <p className="relative z-20 font-sans font-bold text-base text-gray-800">
-            Enter your password
+            Drag & Drop
           </p>
           <p className="relative z-20 font-sans text-base text-gray-600 mt-2">
-            and choose a png file to encrypt
+            or choose a png form your computer
           </p>
           <div className="relative w-full mt-10 max-w-md mx-auto">
             {files.length > 0 ? (
