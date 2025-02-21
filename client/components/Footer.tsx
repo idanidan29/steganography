@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Copyright Text */}
         <p className="text-sm md:text-base font-light text-gray-600">
-          © 2024 Idan Levi. All rights reserved.
+          © 2025 Idan Levi. All rights reserved.
         </p>
 
         {/* Social Icons */}
