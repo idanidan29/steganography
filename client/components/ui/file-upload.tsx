@@ -57,10 +57,10 @@ export const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void })
           <GridPattern />
         </div>
         <div className="flex flex-col items-center justify-center">
-          <p className="relative z-20 font-sans font-bold text-base text-gray-800">
+          <p className="relative z-20 font-sans font-bold text-base text-indigo-900">
             Drag & Drop
           </p>
-          <p className="relative z-20 font-sans text-base text-gray-600 mt-2">
+          <p className="relative z-20 font-sans text-base text-indigo-900 mt-2">
             or choose a png form your computer
           </p>
           <div className="relative w-full mt-10 max-w-md mx-auto">
