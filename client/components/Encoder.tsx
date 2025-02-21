@@ -6,7 +6,7 @@ import { RiLockPasswordFill } from "react-icons/ri";
 
 export const Encoder = () => {
   return (
-    <div className="flex flex-col items-center justify-center mx-auto bg-white shadow-lg rounded-lg p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
+    <div id="Encoder" className="flex flex-col items-center justify-center mx-auto bg-white shadow-lg rounded-lg p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
       <div className="relative w-full">
         <input
           type="text"
