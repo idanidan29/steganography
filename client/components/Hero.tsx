@@ -32,7 +32,7 @@ export const Hero = () => {
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
                         <a
                             className="block w-full rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white shadow-md hover:bg-indigo-700 focus:ring-4 focus:outline-none sm:w-auto"
-                            href="/#Encoder"
+                            href="#Encoder"
                         >
                             Encrypt
                         </a>
