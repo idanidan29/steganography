@@ -1,0 +1,7 @@
+Flask==2.2.2
+Flask-Cors==3.1.1
+Flask-RESTful==0.3.9
+pillow==8.4.0
+pycryptodome==3.14.1
+python-dotenv==0.21.1
+requests==2.28.2
