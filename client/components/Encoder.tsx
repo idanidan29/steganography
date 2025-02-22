@@ -24,7 +24,7 @@ export const Encoder = () => {
     setLoading(true);
     const formData = new FormData();
     formData.append("password", password);
-    formData.append("file", file);
+    formData.append("image", file); 
 
     try {
       const response = await fetch("https://steganography-yz64.onrender.com/stego/encode", {
