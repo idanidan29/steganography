@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { MdOutlinePassword } from "react-icons/md";
 import { LuImageUp } from "react-icons/lu";
 
