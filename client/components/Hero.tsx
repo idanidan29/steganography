@@ -53,13 +53,19 @@ export const Hero = () => {
                 <div className="mx-auto max-w-2xl space-y-4 text-indigo-700">
                     <h2 className="pt-3 text-4xl font-bold text-indigo-800">What is Steganography?</h2>
                     <p>
-                        Steganography is the practice of concealing information within another medium, 
-                        such as an image, audio, or video file. Unlike encryption, which scrambles data 
-                        to make it unreadable, steganography hides data in plain sight.
+                        Steganography is the technique of hiding information inside a file, such as an image, audio, or video,
+                        without making it obvious. Unlike encryption, which makes data unreadable to outsiders,
+                        steganography conceals data in a way that looks completely normal.
                     </p>
                     <p>
-                        This technique is widely used for secure communication, watermarking, and digital forensics. 
-                        In our application, we use steganography to embed passwords within images securely.
+                        This method is widely used for secure communication, digital watermarking, and protecting sensitive information.
+                        In our application, we use steganography to safely store passwords inside images,
+                        keeping them hidden from unauthorized access while still being easily retrievable when needed.
+                    </p>
+                    <p>
+                        Because the hidden data is invisible to the human eye, steganography provides an extra layer of security.
+                        Even if someone gains access to the image, they won’t immediately suspect that it contains sensitive information.
+                        This makes it a powerful tool for keeping passwords safe and private.
                     </p>
                 </div>
             </DragCloseDrawer>
