@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0 pb-4">
           {/* GitHub */}
-          <a href="https://github.com/idanidan29" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/idanidan29/steganography" target="_blank" rel="noopener noreferrer">
             <div className="w-12 h-12 flex justify-center items-center 
                             bg-gray-200 rounded-lg border border-gray-300
                             transition-all duration-300 hover:bg-gray-300 hover:scale-105">
