@@ -29,7 +29,7 @@ export const Hero = () => {
                     >
                         Over 80% of data breaches are due to weak or stolen passwords.
                         <br />
-                        Encrypt your password using our unique Steganography method.
+                        Encrypt your password using Steganography.
                     </motion.p>
 
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -66,6 +66,28 @@ export const Hero = () => {
                         Because the hidden data is invisible to the human eye, steganography provides an extra layer of security.
                         Even if someone gains access to the image, they won’t immediately suspect that it contains sensitive information.
                         This makes it a powerful tool for keeping passwords safe and private.
+                    </p>
+                    <h2 className="pt-3 text-4xl font-bold text-indigo-800">How do I use it?</h2>
+                    <p>
+                        Using steganography to secure your passwords is simple. Here’s how:
+                    </p>
+                    <ol className="list-decimal pl-6 space-y-2">
+                        <li>
+                            <strong>Choose an image:</strong> Start by selecting an image file. This image will act as the carrier for your password.
+                            It’s important to choose a file that looks normal, as the hidden data should remain undetectable.
+                        </li>
+                        <li>
+                            <strong>Enter the password:</strong> Input the password you wish to securely store. This is the information that will be hidden inside the image.
+                        </li>
+                        <li>
+                            <strong>Encrypt the password:</strong> The password is then embedded within the image using our application. You can download the image, now containing the hidden password.
+                        </li>
+                        <li>
+                            <strong>Decrypt the password:</strong> To retrieve your password, simply upload the image again. The application will extract the hidden data, revealing the original password.
+                        </li>
+                    </ol>
+                    <p>
+                        The process is secure and ensures that your password is protected in a way that is virtually undetectable to unauthorized users.
                     </p>
                 </div>
             </DragCloseDrawer>
