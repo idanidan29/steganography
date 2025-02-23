@@ -39,7 +39,7 @@ export const Hero = () => {
 
                         <a
                             className="block w-full rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-400 shadow-md hover:bg-indigo-800 focus:ring-4 focus:outline-none sm:w-auto"
-                            href="#"
+                            href="#Decoder"
                         >
                             Decrypt
                         </a>

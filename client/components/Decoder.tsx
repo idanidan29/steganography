@@ -49,7 +49,7 @@ export const Decoder = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mx-auto bg-white shadow-xl border rounded-md p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
+    <div id="Decoder" className="mt-7 flex flex-col items-center justify-center mx-auto bg-white shadow-xl border rounded-md p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
       <h3 className="sm:text-5xl lg:text-4xl font-extrabold text-indigo-500">Decoder</h3>
       
       {/* FileUpload component for selecting the encoded image */}
@@ -62,8 +62,8 @@ export const Decoder = () => {
       {/* Display the decoded password */}
       {decodedPassword && (
         <div className="mt-4 p-4 bg-gray-100 rounded">
-          <p className="text-lg font-semibold">Decoded Password:</p>
-          <p className="text-base">{decodedPassword}</p>
+          <p className="text-lg font-semibold text-indigo-700">Decoded Password:</p>
+          <p className="text-base text-indigo-600">{decodedPassword}</p>
         </div>
       )}
     </div>
