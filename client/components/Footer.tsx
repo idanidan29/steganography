@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white pt-16  px-6 shadow-md">
       <div className="flex flex-col md:flex-row justify-between items-center">
-        {/* Copyright Text */}
-        <p className="text-sm md:text-base font-light text-gray-600">
-          © 2025 Idan Levi. All rights reserved.
-        </p>
+        
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0 pb-4">
@@ -30,6 +27,10 @@ const Footer = () => {
             </div>
           </a>
         </div>
+        {/* Copyright Text */}
+        <p className="text-sm md:text-base font-light text-gray-600">
+          © 2025 Idan Levi. All rights reserved.
+        </p>
       </div>
     </footer>
   );
