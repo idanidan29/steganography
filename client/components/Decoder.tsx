@@ -1,0 +1,71 @@
+"use client";
+
+import { useState } from "react";
+import { FileUpload } from "./ui/file-upload";
+import { DecryptButton } from "./ui/DecryptButton";
+
+export const Decoder = () => {
+  const [file, setFile] = useState<File | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [decodedPassword, setDecodedPassword] = useState<string | null>(null);
+
+  // Handle file selection from FileUpload component
+  const handleFileChange = (selectedFiles: File[]) => {
+    setFile(selectedFiles.length > 0 ? selectedFiles[0] : null);
+    // Reset any previous decoded password when a new file is selected
+    setDecodedPassword(null);
+  };
+
+  const handleDecode = async () => {
+    if (!file) {
+      alert("Please upload an encoded PNG file.");
+      return;
+    }
+
+    setLoading(true);
+    const formData = new FormData();
+    formData.append("image", file);
+
+    try {
+      // Replace with your actual Flask backend URL
+      const response = await fetch("https://steganography-yz64.onrender.com/stego/decode", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Decoding failed");
+      }
+
+      // Parse the JSON response to get the decoded password
+      const data = await response.json();
+      setDecodedPassword(data.decoded_password);
+    } catch (error) {
+      console.error(error);
+      alert("Failed to decode the file.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center mx-auto bg-white shadow-xl border rounded-md p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
+      <h3 className="sm:text-5xl lg:text-4xl font-extrabold text-indigo-500">Decoder</h3>
+      
+      {/* FileUpload component for selecting the encoded image */}
+      <FileUpload onChange={handleFileChange} />
+
+      {/* Button to trigger decoding */}
+      <DecryptButton onClick={handleDecode} disabled={loading}/>
+
+
+      {/* Display the decoded password */}
+      {decodedPassword && (
+        <div className="mt-4 p-4 bg-gray-100 rounded">
+          <p className="text-lg font-semibold">Decoded Password:</p>
+          <p className="text-base">{decodedPassword}</p>
+        </div>
+      )}
+    </div>
+  );
+};

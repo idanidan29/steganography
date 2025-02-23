@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FileUpload } from "./ui/file-upload";
-import { EncryptButton } from "./EncryptButton ";
+import { EncryptButton } from "./ui/EncryptButton ";
 
 export const Encoder = () => {
   const [password, setPassword] = useState("");
