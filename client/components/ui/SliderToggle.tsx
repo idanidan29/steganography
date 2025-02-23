@@ -12,7 +12,7 @@ interface SliderToggleProps {
 
 export const SliderToggle: React.FC<SliderToggleProps> = ({ selected, setSelected }) => {
   return (
-    <div className="flex justify-center w-full">
+    <div id="Encoder" className="flex justify-center w-full">
       <div className="relative flex w-fit items-center rounded-full">
         <button
           className={`${TOGGLE_CLASSES} ${selected === "Encrypt" ? "text-white" : "text-slate-300"}`}
