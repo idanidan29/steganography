@@ -3,7 +3,7 @@ import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white pt-16  px-6 shadow-md" id="contact">
+    <footer className="w-full bg-white pt-16  px-6 shadow-md">
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Copyright Text */}
         <p className="text-sm md:text-base font-light text-gray-600">

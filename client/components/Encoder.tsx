@@ -24,7 +24,7 @@ export const Encoder = () => {
     setLoading(true);
     const formData = new FormData();
     formData.append("password", password);
-    formData.append("image", file); 
+    formData.append("image", file);
 
     try {
       const response = await fetch("https://steganography-yz64.onrender.com/stego/encode", {
@@ -57,7 +57,12 @@ export const Encoder = () => {
   };
 
   return (
-    <div id="Encoder" className="flex flex-col items-center justify-center mx-auto bg-white shadow-lg rounded-lg p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
+    <div id="Encoder" className="flex flex-col items-center justify-center mx-auto bg-white shadow-xl border rounded-md p-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
+      <div className="flex justify-center items-center min-h-scree">
+        <h3 className=" sm:text-5xl lg:text-4xl font-extrabold text-white bg-indigo-500 bg-clip-text text-transparent">
+          Encoder
+        </h3>
+      </div>
       <div className="relative w-full">
         <input
           type="text"
