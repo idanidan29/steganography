@@ -1,6 +1,6 @@
 # Steganography Project 🕵️‍♂️🔐
 
-This is an in-progress project aimed at implementing a **steganography** tool to store sensitive information like passwords within images. The project uses **Next.js** for the frontend and **Flask** for the backend, offering a full-stack solution for secure data embedding and retrieval.
+This is a small project aimed at implementing a **steganography** tool to store sensitive information like passwords within images. The project uses **Next.js** for the frontend and **Flask** for the backend, offering a full-stack solution for secure data embedding and retrieval.
 
 ## Features ✨
 
@@ -12,9 +12,13 @@ This is an in-progress project aimed at implementing a **steganography** tool to
 ## Technologies 💻
 
 - **Frontend**:
-  - Next.js 
-  - Tailwind CSS 
+  - Next.js
+  - Tailwind CSS
   
 - **Backend**:
-  - Flask 
-  - Python libraries for image processing and encoding 
+  - Flask
+  - Python libraries for image processing and encoding
+
+## Access the Project 🚀
+
+You can try out the project at [lockpixel.vercel.app](https://lockpixel.vercel.app/).
