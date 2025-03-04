@@ -14,7 +14,7 @@ You can try out the project at [lockpixel.vercel.app](https://lockpixel.vercel.a
 ## Technologies 💻
 
 - **Frontend**:
-  - Next.js
+  - Next.js (ts)
   - Tailwind CSS
   
 - **Backend**:
