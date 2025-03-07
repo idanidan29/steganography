@@ -1,4 +1,4 @@
-# Steganography Project 🕵️‍♂️🔐
+# Steganography Project 🔐
 
 This is a small project aimed at implementing a **steganography** tool to store sensitive information like passwords within images. The project uses **Next.js** for the frontend and **Flask** for the backend, offering a full-stack solution for secure data embedding and retrieval.
 
