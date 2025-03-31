@@ -21,5 +21,7 @@ You can try out the project at [lockpixel.vercel.app](https://lockpixel.vercel.a
   - Flask
   - Python libraries for image processing and encoding
 
+![image](https://github.com/user-attachments/assets/c0f87304-96dd-49b5-84ea-56356e4b6640)
+
 
 
